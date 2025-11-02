@@ -34,7 +34,7 @@ body{
 }
 header{
     background-color: #5E090A;
-     width: 881px;
+    width: 980px;
     margin: auto;
     padding: 10px;
 }
@@ -73,11 +73,23 @@ nav > a:hover{
 }
 
 main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /* propriedades para estudas
     
     background-color: var(--cor03);
-    width: 881px;
+    width: 980px;
+    height: 980px;
     margin: auto;
     padding: 10px;
+    */
 }
 
 #conteiner{
@@ -126,8 +138,79 @@ a > p:hover{
     
 }
 
-
-
 p{
     color: white;
+}
+
+div.quadrado{
+    background-color: black;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+div.quadrado1{
+    background-color: black;
+    display: inline-block;
+    width: 195px;
+    height: 201px;
+    padding: 10px;
+}
+
+div.quadrado > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: justify;
+    font-size: small;
+    padding: 5px;
+}
+
+div#q1 > img{
+    width: 323px;
+    height: 200px;
+}
+
+div#q2 > img{
+    width: 323px;
+    height: 200px;
+}
+
+div#q3 > img{
+    width: 323px;
+    height: 200px;   
+}
+
+div#q4 > img{
+    width: 207px;
+    height: 200px;
+    
+}
+
+div#q5 > img{
+    width: 150px;
+    height: 200px;
+    
+}
+
+div#q6 > img{
+    width: 124px;
+    height: 150px;
+}
+
+footer{
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    text-decoration: none; 
+    padding: 5px;  
+}
+
+footer > p > a{
+    color: white;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    color: red;
 }
