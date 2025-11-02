@@ -38,6 +38,19 @@ header{
     margin: auto;
     padding: 10px;
 }
+
+.titulo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: var(--fonte-titulo);
+    color: white;
+    padding: 20px;
+}
+
+.titulo > h2{
+    letter-spacing: 3px
+}
 nav{
     font-family: var(--fonte-padrao);
     margin: auto;
@@ -60,20 +73,59 @@ nav > a:hover{
 }
 
 main{
+    
     background-color: var(--cor03);
     width: 881px;
     margin: auto;
     padding: 10px;
 }
 
-.titulo{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-family: var(--fonte-titulo);
-    color: white;
-    padding: 20px;
+#conteiner{
+    padding: 10px;
+    background-color: black;
+    
 }
+
+#centralizado > img{
+    display: block;
+    margin: auto;
+    
+}
+
+aside{
+    background-color: white;
+    height: 19px;
+    width: 675px;
+    margin: auto;
+    padding: 3px;
+    margin-top: -17px;
+}
+
+aside:hover{
+    background-color: red;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+a > p{
+    font-family: var(--fonte-padrao);
+    color: black;
+    text-align: center;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a > p:hover{
+    color: white;
+    
+}
+
 
 
 p{
