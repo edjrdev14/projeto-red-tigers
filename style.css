@@ -29,8 +29,7 @@
 }
 
 body{
-    background-color: var(--cor01);
-    
+    background-color: var(--cor01);  
 }
 header{
     background-color: #5E090A;
@@ -44,19 +43,18 @@ header{
     gap: 20px;
     align-items: center;
     font-family: var(--fonte-titulo);
+    font-size: 1.5vw;
     color: white;
     padding: 20px;
-}
-
-.titulo > h1{
     letter-spacing: 3px;
     min-width: 500px;
-    
 }
+
 nav{
     font-family: var(--fonte-padrao);
     margin: auto;
     padding: 1px 38px;
+    font-size: 1.5vw;
 }
 
 nav > a{
@@ -65,7 +63,6 @@ nav > a{
     text-decoration: none;
     font-weight: bold;
     transition-duration: 1s;
-
 }
 
 nav > a:hover{
@@ -143,6 +140,7 @@ div.quadrado img{
     width: 178px;
     height: 170px;
 }
+
 
 footer{
     background-color: var(--cor02);
