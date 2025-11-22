@@ -29,8 +29,10 @@
 }
 
 body{
-    background-color: var(--cor01);  
-}
+    background-color: var(--cor01);
+    background-image: url(Imagens/fundo-body1.0.png);
+    background-repeat: repeat;
+    
 header{
     background-color: #5E090A;
     margin: auto;
@@ -54,7 +56,7 @@ nav{
     font-family: var(--fonte-padrao);
     margin: auto;
     padding: 1px 38px;
-    font-size: 1.5vw;
+    font-size: 1em
 }
 
 nav > a{
@@ -72,8 +74,10 @@ nav > a:hover{
 }
 
 main{
-    min-width: 300px;
-    max-width: 959px;
+    position: relative;
+    z-index: 1;
+    width: 959px;
+    height: 864px;
     margin: auto;
     padding: 20px;
     margin-bottom: 30px;
@@ -81,6 +85,20 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Imagens/dundo-main.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 section#principal{
@@ -130,16 +148,23 @@ div.quadrado img{
     height: 170px;
 }
 
-#q1 > img{
-    padding-right: 178px;
-    width: 178px;
-    height: 170px;
+div.tamanho{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
 }
 
-#q2 > img{
-    width: 178px;
-    height: 170px;
+div.tamanho > img{
+    width: 200px;
+    height: 200px;
+    
 }
+
+div.tamanho#pequeno > img{
+    width: 126px;
+    height: 112px;
+}
+
 
 
 footer{
